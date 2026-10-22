@@ -20,14 +20,14 @@ bluebird-drink,가상 하늘카페,음료,2500
 bluebird-study,가상 조용한방,공간,0
 ```
 
-- 첫 줄은 정확히 `id,name,category,price`입니다. 데이터는 1~3행으로 시작합니다.
+- 첫 줄은 정확히 `id,name,category,price`입니다. 데이터는 1–3행으로 시작합니다.
 - `id`는 전체 기여 파일에서 중복되지 않아야 합니다. `<별칭>-<항목>` 형식을 사용합니다.
 - 이름과 종류는 빈 값이 아니어야 합니다. 금액은 0 이상의 정수입니다. 이름에 쉼표를 넣으면 CSV의 큰따옴표 규칙을 적용합니다.
 - 실제 개인정보나 다른 사이트에서 수집한 자료 대신 직접 만든 가상 예시를 제출합니다.
 
 ## PR에 적을 내용
 
-PR 대상은 **`Jinwoo-Han/opensource_test_repo`의 `main`**, 비교 대상은 **내 fork의 작업 branch**입니다. 12~14주차 개인 실습에서는 원본 대신 본인의 `oss-individual-labs` main을 대상으로 합니다.
+PR 대상은 **`Jinwoo-Han/opensource_test_repo`의 `main`**, 비교 대상은 **내 fork의 작업 branch**입니다. 12–14주차 개인 실습에서는 원본 대신 본인의 `oss-individual-labs` main을 대상으로 합니다.
 
 목적, 관련 Issue, 바꾼 파일, 실행한 명령과 실제 결과를 적습니다. 예상 결과를 실제 실행한 것처럼 적지 않습니다. 반복형 첫 기여 Issue는 `Refs #번호`로 연결하고 닫지 않습니다. 자신이 맡은 일회성 코드 Issue를 모두 해결했다면 `Closes #번호`를 사용할 수 있습니다.
 
