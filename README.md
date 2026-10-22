@@ -2,7 +2,7 @@
 
 [![Python practice checks](https://github.com/Jinwoo-Han/opensource_test_repo/actions/workflows/tests.yml/badge.svg)](https://github.com/Jinwoo-Han/opensource_test_repo/actions/workflows/tests.yml)
 
-작은 Python 프로그램을 함께 개선하며 **Issue → branch → PR → 리뷰 → 수정 → merge**를 연습합니다. 모든 예시 장소와 금액은 수업을 위해 만든 가상 데이터입니다.
+작은 Python 프로그램을 개인별로 개선하며 **Issue → branch → PR → 리뷰 → 수정 → merge**를 연습합니다. 모든 예시 장소와 금액은 수업을 위해 만든 가상 데이터입니다.
 
 ## 어디서 시작하나요?
 
@@ -13,8 +13,8 @@
 | branch·merge·PR·충돌 연습 | [10주차](labs/week10.md) |
 | 이 저장소에 첫 기여 | [11주차](labs/week11.md), [CONTRIBUTING](CONTRIBUTING.md) |
 | 맡을 작업 고르기 | [기여 과제](docs/tasks.md), [열린 Issue](https://github.com/Jinwoo-Han/opensource_test_repo/issues) |
-| 다른 학생의 PR 검토 | [리뷰 안내](docs/review-guide.md) |
-| 팀 프로젝트 진행 | [12주차](labs/week12.md) · [13주차](labs/week13.md) · [14주차](labs/week14.md) |
+| 교수자 피드백·자동검사 | [리뷰 안내](docs/review-guide.md) · [Autograder](docs/autograding.md) |
+| 개인별 기능·테스트·패키징 실습 | [12주차](labs/week12.md) · [13주차](labs/week13.md) · [14주차](labs/week14.md) |
 | 수업 운영 | [교수자 안내](docs/instructor-guide.md) |
 
 ## 실행하기
@@ -41,15 +41,15 @@ python -m unittest discover -s tests -v
 2. [기여 과제](docs/tasks.md)에서 시작 과제를 고릅니다.
 3. 새 branch에서 `examples/submissions/<별칭>.csv` 하나를 추가합니다.
 4. 프로그램과 테스트를 실행하고 원본 저장소의 `main`으로 PR을 보냅니다.
-5. 짝의 PR을 읽고 실행 결과를 바탕으로 리뷰합니다. 받은 의견을 반영합니다.
+5. CI 결과와 교수자 피드백을 확인하고 같은 branch에서 수정합니다. 짝 리뷰는 없습니다.
 
-9~10주차의 개인 연습 저장소, 이 공통 기여 저장소, 12주차 이후 팀 저장소는 역할이 다릅니다. 11주차에는 **Fork**, 팀 프로젝트를 새로 시작할 때는 **Use this template**을 사용합니다. 팀 저장소에서는 팀의 `main`으로 PR을 보냅니다.
+9~10주차는 직접 만든 개인 저장소, 11주차는 이 공통 저장소의 **Fork**, 12~14주차는 **Use this template**으로 만든 공개 개인 `oss-individual-labs`를 사용합니다. 12주차 이후 PR은 본인 저장소 main으로 보냅니다. 팀 편성·공동 결과물·학생 간 리뷰를 요구하지 않습니다.
 
 ## 공개 범위와 완료 기준
 
-- 수업 안내·예제·학생 기여·팀 프로젝트는 공개를 기본으로 합니다. 학번, 성적, 연락처, 인증 정보는 올리지 않습니다. 제출·평가 정보는 LMS로 전달합니다.
+- 수업 안내·예제·학생 기여·개인 실습는 공개를 기본으로 합니다. 학번, 성적, 연락처, 인증 정보는 올리지 않습니다. 제출·평가 정보는 LMS로 전달합니다.
 - 코드는 작은 변경 단위로 제안합니다. 공통 `main` 병합은 교수자/관리자가 맡습니다. 일반 기여자는 원본에 직접 push할 필요가 없습니다.
-- 완료 증거는 **본인의 PR URL, 다른 학생에게 남긴 리뷰, 실제 실행 결과, 변경 이유 설명**입니다. CI 성공은 성적 확정이나 정식 승인과 같지 않습니다.
+- 완료 증거는 **본인의 PR URL, 제출 SHA, 검사 결과, 실제 실행 결과, 변경 이유 설명**입니다. CI 성공은 성적 확정이나 정식 승인과 같지 않습니다.
 - 다른 사람의 코드·데이터는 출처와 이용 조건을 확인합니다. 이번 데이터 과제는 직접 만든 가상 자료를 사용합니다.
 
-코드와 직접 작성한 예시는 기존 [MIT LICENSE](LICENSE)를 따릅니다. 다른 팀이 재사용할 때도 해당 고지를 유지합니다.
+코드와 직접 작성한 예시는 기존 [MIT LICENSE](LICENSE)를 따릅니다. 다른 사람이 재사용할 때도 해당 고지를 유지합니다.

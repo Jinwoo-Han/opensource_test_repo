@@ -34,6 +34,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
           python -m campus_tool --data-dir examples/submissions
+      - name: Check baseline with public grader
+        run: python tools/autograde.py --week baseline --output output/baseline-checks.json
       - name: Build distribution
         run: python -m build
       - name: Verify wheel outside the source directory

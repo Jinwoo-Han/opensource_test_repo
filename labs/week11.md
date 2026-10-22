@@ -1,6 +1,6 @@
 # 11주차: Fork에서 원본으로 첫 기여
 
-목표: 이 공통 저장소에 작은 PR을 보내고 다른 학생의 변경을 리뷰합니다. GitHub 계정 인증은 9주차에 마쳤다고 가정합니다.
+목표: 이 공통 저장소에 작은 PR을 보내고 CI 결과와 교수자 피드백을 반영합니다. GitHub 계정 인증은 9주차에 마쳤다고 가정합니다.
 
 ## 1. Fork와 clone
 
@@ -43,13 +43,13 @@ git commit -m "Add fictional campus entries"
 git push -u origin data/YOUR_ALIAS
 ```
 
-## 3. PR과 동료 리뷰
+## 3. PR과 교수자 검토
 
 GitHub의 PR 생성 화면에서 **base repository `Jinwoo-Han/opensource_test_repo`, base `main`**, **head repository 내 fork, compare `data/YOUR_ALIAS`**를 확인합니다. 자동으로 채워진 PR 양식에 실제 결과를 적습니다. T01은 여러 학생이 참여하므로 `Refs #번호`로 연결하고 `Closes`는 쓰지 않습니다.
 
-[리뷰 안내](../docs/review-guide.md)에 따라 짝의 PR을 실행·검토합니다. 받은 의견은 같은 branch에서 수정·commit·push해 반영합니다. CI 실행 승인이 대기 중이면 교수자에게 확인합니다.
+[피드백 안내](../docs/review-guide.md)에 따라 CI 결과와 교수자 의견을 확인합니다. 필요한 변경은 같은 branch에서 수정·commit·push해 반영합니다. CI 실행 승인이 대기 중이면 교수자에게 확인합니다.
 
-교수자 병합 대기 자체는 미제출이 아닙니다. 제출은 PR URL, 동료 리뷰 URL, 실행 결과와 변경 이유 설명으로 확인합니다.
+교수자 병합 대기 자체는 미제출이 아닙니다. 제출은 PR URL, 제출 SHA, CI 결과, 실행 결과와 변경 이유 설명으로 확인합니다.
 
 ## 4. 병합 후 동기화
 
