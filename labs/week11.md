@@ -31,7 +31,7 @@ git switch -c data/YOUR_ALIAS
 cp examples/submissions/instructor-example.csv examples/submissions/YOUR_ALIAS.csv
 ```
 
-새 파일을 편집하여 **모든 ID를 본인 별칭으로 바꾸고**, 직접 만든 가상 항목을 1~3개 적습니다. 예제 파일은 수정하지 않습니다. [CSV 규격](../CONTRIBUTING.md)을 확인합니다.
+새 파일을 편집하여 **모든 ID를 본인 별칭으로 바꾸고**, 직접 만든 가상 항목을 1–3개 적습니다. 예제 파일은 수정하지 않습니다. [CSV 규격](../CONTRIBUTING.md)을 확인합니다.
 
 ```bash
 python -m campus_tool --data-dir examples/submissions

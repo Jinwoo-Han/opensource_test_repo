@@ -8,7 +8,7 @@
 
 | 지금 할 일 | 안내 |
 |---|---|
-| 9~14주차 전체 흐름 확인 | [수업 계획](docs/course-plan.md) |
+| 9–14주차 전체 흐름 확인 | [수업 계획](docs/course-plan.md) |
 | GitHub 저장소 처음 연결 | [9주차](labs/week09.md) |
 | branch·merge·PR·충돌 연습 | [10주차](labs/week10.md) |
 | 이 저장소에 첫 기여 | [11주차](labs/week11.md), [CONTRIBUTING](CONTRIBUTING.md) |
@@ -43,7 +43,7 @@ python -m unittest discover -s tests -v
 4. 프로그램과 테스트를 실행하고 원본 저장소의 `main`으로 PR을 보냅니다.
 5. CI 결과와 교수자 피드백을 확인하고 같은 branch에서 수정합니다. 짝 리뷰는 없습니다.
 
-9~10주차는 직접 만든 개인 저장소, 11주차는 이 공통 저장소의 **Fork**, 12~14주차는 **Use this template**으로 만든 공개 개인 `oss-individual-labs`를 사용합니다. 12주차 이후 PR은 본인 저장소 main으로 보냅니다. 팀 편성·공동 결과물·학생 간 리뷰를 요구하지 않습니다.
+9–10주차는 직접 만든 개인 저장소, 11주차는 이 공통 저장소의 **Fork**, 12–14주차는 **Use this template**으로 만든 공개 개인 `oss-individual-labs`를 사용합니다. 12주차 이후 PR은 본인 저장소 main으로 보냅니다. 팀 편성·공동 결과물·학생 간 리뷰를 요구하지 않습니다.
 
 ## 공개 범위와 완료 기준
 
