@@ -27,7 +27,7 @@ bluebird-study,가상 조용한방,공간,0
 
 ## PR에 적을 내용
 
-PR 대상은 **`Jinwoo-Han/opensource_test_repo`의 `main`**, 비교 대상은 **내 fork의 작업 branch**입니다. 팀 과제 단계에서는 원본 대신 팀 저장소를 대상으로 합니다.
+PR 대상은 **`Jinwoo-Han/opensource_test_repo`의 `main`**, 비교 대상은 **내 fork의 작업 branch**입니다. 12~14주차 개인 실습에서는 원본 대신 본인의 `oss-individual-labs` main을 대상으로 합니다.
 
 목적, 관련 Issue, 바꾼 파일, 실행한 명령과 실제 결과를 적습니다. 예상 결과를 실제 실행한 것처럼 적지 않습니다. 반복형 첫 기여 Issue는 `Refs #번호`로 연결하고 닫지 않습니다. 자신이 맡은 일회성 코드 Issue를 모두 해결했다면 `Closes #번호`를 사용할 수 있습니다.
 
@@ -40,14 +40,14 @@ git status
 
 Files changed에 의도한 파일만 있는지 확인합니다. `.venv`, 비밀정보, 생성된 빌드 파일은 PR에 포함하지 않습니다.
 
-## 리뷰와 병합
+## 교수자 검토·자동검사와 병합
 
-1. [리뷰 안내](docs/review-guide.md)에 따라 짝의 변경을 읽고 실행합니다.
-2. 구체적인 질문 또는 개선 제안을 남깁니다. 문제가 없다면 확인한 입력과 결과를 적습니다. 억지로 오류를 만들 필요는 없습니다.
-3. 작성자는 **같은 branch**에서 수정하고 commit·push합니다. 기존 PR이 갱신됩니다.
-4. 학생의 의견과 CI 결과를 확인한 교수자/관리자가 **Create a merge commit**으로 병합합니다. 학생의 공개 리뷰가 필수 승인 권한을 자동으로 부여하는 것은 아닙니다.
-5. 작성자는 [11주차 안내](labs/week11.md)에 따라 원본의 변경을 자기 fork와 로컬로 가져옵니다.
+1. 학생은 Files changed와 실제 실행 결과를 스스로 확인합니다. 짝 리뷰와 타인 리뷰 URL은 요구하지 않습니다.
+2. 공통 기여는 `tests` CI와 교수자 검토, 개인 과제는 공지된 교수자 리뷰 또는 [Autograder](docs/autograding.md) 기준으로 확인합니다.
+3. 받은 수정 요청이나 검사 실패는 **같은 branch**에서 수정하고 commit·push합니다. 기존 PR이 갱신됩니다.
+4. 공통 원본은 교수자/관리자가 **Create a merge commit**으로 병합합니다. 개인 저장소는 공지된 검토·검사 기준을 충족하면 학생이 병합합니다. self-approval을 요구하지 않습니다.
+5. 공통 기여자는 [11주차 안내](labs/week11.md)에 따라 원본 변경을 자기 fork와 로컬에 가져옵니다.
 
-본인 PR을 스스로 Approve하는 것은 완료 조건이 아닙니다. 리뷰에서는 사람 대신 코드와 실행 결과를 대상으로 설명합니다. AI 도움을 사용했으면 도움받은 범위와 직접 검증한 내용을 PR에 적고 변경 이유를 본인이 설명합니다.
+AI 도움을 사용했으면 사용 범위와 직접 검증한 내용을 적고 변경 이유를 본인이 설명합니다. 점수·비공개 피드백은 LMS에서 다룹니다.
 
-CI가 `Awaiting approval`이면 관리자의 실행 확인을 기다립니다. 이는 테스트 실패와 다릅니다. 실패하면 Actions에서 가장 먼저 실패한 단계와 메시지를 읽습니다. [GitHub 공식 안내](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks)
+CI가 `Awaiting approval`이면 관리자의 실행 확인을 기다립니다. 테스트 실패와 다릅니다. 실패하면 Actions에서 먼저 실패한 단계와 메시지를 읽습니다. [공식 안내](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/approve-runs-from-forks)
